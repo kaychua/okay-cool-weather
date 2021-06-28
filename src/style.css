@@ -1,0 +1,107 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.weather-app-wrap {
+  padding: 30px;
+  border-radius: 15px;
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 25.8%,
+    rgb(252, 239, 250) 50.8%,
+    rgb(234, 251, 251) 77.6%,
+    rgb(240, 251, 244) 100.7%
+  );
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: rgb(112, 115, 177);
+  font-weight: black;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  font-size: 15px;
+  margin: 0 auto 10px;
+  padding: 0;
+  color: rgb(112, 115, 177);
+}
+
+footer {
+  margin: 20px 0 0 4px;
+  font-size: 12px;
+}
+
+footer a {
+  color: rgb(112, 115, 177);
+}
+
+img {
+  width: 80px;
+  position: relative;
+  top: -25px;
+}
+
+#search {
+  margin: 0 10px 0 0;
+  border: 1px solid white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  box-shadow: 4px 4px 12px rgba(172, 204, 231, 0.4);
+  transition: all 180ms ease-in;
+}
+
+#search:focus-visible {
+  outline: none;
+  border: 1px solid rgba(222, 223, 245, 0.5);
+  box-shadow: 4px 4px 10px rgba(241, 168, 229, 0.4);
+  color: rgb(112, 115, 177);
+}
+
+#search-button {
+  margin: 0 10px 0 0;
+  border: 1px solid white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.current-button {
+  margin: 0 10px 0 0;
+  border: 1px solid white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+#units {
+  color: rgb(112, 115, 177);
+  position: relative;
+  top: -35px;
+}
+
+#temperature {
+  font-size: 60px;
+  color: rgb(112, 115, 177);
+}
+
+.report {
+  position: relative;
+  top: 14px;
+  left: 70px;
+}
