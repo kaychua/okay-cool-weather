@@ -43,7 +43,8 @@ ul {
 }
 
 .report {
-  top: -25px;
+  position: relative;
+  top: 25px;
 }
 
 img {
