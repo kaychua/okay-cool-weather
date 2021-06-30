@@ -42,6 +42,10 @@ ul {
   color: rgba(191, 165, 253, 0.863);
 }
 
+.report {
+  top: 25px;
+}
+
 img {
   max-width: 70px;
 }
