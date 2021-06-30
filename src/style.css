@@ -42,12 +42,6 @@ ul {
   color: rgba(191, 165, 253, 0.863);
 }
 
-.report {
-  position: relative;
-  top: 15px;
-  font-size: 14px;
-}
-
 img {
   max-width: 70px;
 }
