@@ -10,7 +10,7 @@ body {
 }
 
 .weather-app-wrap {
-  padding: 30px;
+  padding: 25px;
   border-radius: 15px;
   background: radial-gradient(
     328px at 2.9% 15%,
@@ -42,13 +42,11 @@ ul {
   color: rgba(191, 165, 253, 0.863);
 }
 
-.report {
-  position: relative;
-  top: 30px;
-}
-
 img {
+  display: inline-block;
   max-width: 70px;
+  margin: 0 -10px -5px -15px;
+  padding: 0;
 }
 
 footer {
@@ -109,11 +107,21 @@ footer a {
   transition: all 150ms ease-in;
 }
 
+.row {
+  --bs-gutter-x: none;
+}
+
+.report {
+  position: relative;
+  top: 26px;
+  font-size: 14px;
+}
+
 #temperature {
-  font-size: 50px;
+  font-size: 45px;
   color: rgb(191, 165, 253);
   position: relative;
-  top: 20px;
+  top: 15px;
 }
 
 #units {
