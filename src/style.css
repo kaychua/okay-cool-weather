@@ -10,7 +10,7 @@ body {
 }
 
 .weather-app-wrap {
-  padding: 25px;
+  padding: 25px 15px 25px 30px;
   border-radius: 15px;
   background: radial-gradient(
     328px at 2.9% 15%,
@@ -23,12 +23,13 @@ body {
 }
 
 h1 {
-  color: rgb(191, 165, 253);
+  color: rgb(169, 140, 236);
   font-weight: black;
 }
 
 li {
   list-style: none;
+  line-height: 1.7em;
 }
 
 li::first-letter {
@@ -39,7 +40,7 @@ ul {
   font-size: 15px;
   margin: 0 auto 10px;
   padding: 0;
-  color: rgba(191, 165, 253, 0.863);
+  color: rgba(169, 140, 236);
 }
 
 img {
@@ -55,7 +56,7 @@ footer {
 }
 
 footer a {
-  color: rgb(191, 165, 253);
+  color: rgb(169, 140, 236);
 }
 
 .search-bar {
@@ -69,27 +70,25 @@ footer a {
   border-radius: 20px;
   font-size: 14px;
   color: rgb(255, 255, 255);
-  background: rgb(198, 183, 255);
+  background: rgb(179, 150, 247);
   transition: all 150ms ease-in;
 }
 
 #current-button {
   margin: 0 10px 0 0;
-  border: 1px solid rgb(189, 172, 248);
-  padding: 5px 15px;
+  padding: 6px 15px;
   border-radius: 20px;
   font-size: 14px;
-  color: rgb(189, 172, 248);
-  background: rgb(255, 255, 255, 0.3);
+  color: rgb(179, 150, 247);
+  background: rgb(255, 255, 255);
+  border: none;
   transition: all 150ms ease-in;
 }
 
-#search-button:hover {
-  background: rgba(209, 198, 248, 0.664);
-}
-
+#search-button:hover,
 #current-button:hover {
-  background: rgb(255, 255, 255, 0.8);
+  background: rgb(253, 199, 255);
+  color: rgb(255, 255, 255);
 }
 
 #search {
@@ -119,7 +118,7 @@ footer a {
 
 #temperature {
   font-size: 45px;
-  color: rgb(191, 165, 253);
+  color: rgb(169, 140, 236);
   position: relative;
   top: 15px;
 }
@@ -128,7 +127,7 @@ footer a {
   position: relative;
   top: -6px;
   margin: 0;
-  color: rgb(183, 156, 245);
+  color: rgb(169, 140, 236);
 }
 
 #units a {
@@ -143,11 +142,15 @@ a:hover {
 }
 
 #units .active {
-  color: rgb(183, 156, 245);
+  color: rgb(169, 140, 236);
   cursor: default;
 }
 
 #units .active:hover {
-  color: rgb(183, 156, 245);
+  color: rgb(169, 140, 236);
   cursor: default;
+}
+
+li small {
+  color: rgba(169, 140, 236, 0.692);
 }
