@@ -62,8 +62,6 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("Seoul");
-
 function displayFahrenheitUnit(event) {
   event.preventDefault();
   let fahrenheitConversion = Math.round((14 * 9) / 5 + 32);
@@ -76,3 +74,5 @@ form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click", displayFahrenheitUnit);
+
+search("Seoul");
