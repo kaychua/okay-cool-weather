@@ -64,5 +64,15 @@ function handleSubmit(event) {
 
 search("Seoul");
 
+function displayFahrenheitUnit(event) {
+  event.preventDefault();
+  let fahrenheitConversion = Math.round((14 * 9) / 5 + 32);
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = fahrenheitConversion;
+}
+
 let form = document.querySelector(".search-bar");
 form.addEventListener("submit", handleSubmit);
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", displayFahrenheitUnit);
