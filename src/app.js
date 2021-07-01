@@ -72,6 +72,11 @@ function displayFahrenheitUnit(event) {
   temperatureElement.innerHTML = Math.round(fahrenheitConversion);
 }
 
+function displayFahrenheitUnit(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = celsiusTemperature;
+}
 let celsiusTemperature = null;
 
 let form = document.querySelector(".search-bar");
@@ -81,6 +86,6 @@ let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click", displayFahrenheitUnit);
 
 let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", displayFahrenheitUnit);
+celsiusLink.addEventListener("click", displayCelsiusUnit);
 
 search("Seoul");
