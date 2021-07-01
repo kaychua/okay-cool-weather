@@ -67,13 +67,18 @@ function handleSubmit(event) {
 
 function displayFahrenheitUnit(event) {
   event.preventDefault();
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let fahrenheitConversion = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
+
   temperatureElement.innerHTML = Math.round(fahrenheitConversion);
 }
 
 function displayCelsiusUnit(event) {
   event.preventDefault();
+  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
