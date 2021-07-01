@@ -32,7 +32,9 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#currentTime");
   let iconElement = document.querySelector("#weatherIcon");
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+
+  celsiusTemperature = Math.round(response.data.main.temp);
+  temperatureElement.innerHTML = celsiusTemperature;
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
@@ -68,6 +70,8 @@ function displayFahrenheitUnit(event) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = fahrenheitConversion;
 }
+
+let celsiusTemperature = null;
 
 let form = document.querySelector(".search-bar");
 form.addEventListener("submit", handleSubmit);
