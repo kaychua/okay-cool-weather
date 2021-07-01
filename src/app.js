@@ -72,10 +72,10 @@ function displayFahrenheitUnit(event) {
   temperatureElement.innerHTML = Math.round(fahrenheitConversion);
 }
 
-function displayFahrenheitUnit(event) {
+function displayCelsiusUnit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = celsiusTemperature;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 let celsiusTemperature = null;
 

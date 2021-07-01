@@ -132,12 +132,22 @@ footer a {
 }
 
 #units a {
-  color: rgb(183, 156, 245);
+  color: rgba(250, 94, 255, 0.753);
   text-decoration: none;
-  transition: all 150ms ease-in;
+  transition: all 50ms ease-in;
 }
 
 #units a:hover,
 a:hover {
-  color: rgba(250, 94, 255, 0.753);
+  color: rgba(250, 94, 255, 0.534);
+}
+
+#units .active {
+  color: rgb(183, 156, 245);
+  cursor: default;
+}
+
+#units .active:hover {
+  color: rgb(183, 156, 245);
+  cursor: default;
 }
