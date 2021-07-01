@@ -80,4 +80,7 @@ form.addEventListener("submit", handleSubmit);
 let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click", displayFahrenheitUnit);
 
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", displayFahrenheitUnit);
+
 search("Seoul");
