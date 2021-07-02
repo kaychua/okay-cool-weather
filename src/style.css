@@ -112,6 +112,7 @@ footer a {
   position: relative;
   top: 26px;
   font-size: 14px;
+  left: 10px;
 }
 
 #temperature {
@@ -155,20 +156,24 @@ li small {
 
 .weather-forecast {
   padding: 0;
-  margin: 20px auto 5px -9px;
+  margin: 15px auto 3px -2px;
   text-align: center;
   color: rgb(255, 255, 255);
 }
 
 .weather-forecast-date {
-  font-size: 13px;
+  font-size: 13.5px;
 }
 
 .weather-forecast-temperature {
-  font-size: 12.5px;
+  font-size: 12px;
 }
 
 .weather-forecast img {
   width: 40px;
   margin: 0 auto;
+}
+
+.min-forecast-temp {
+  opacity: 0.1;
 }
