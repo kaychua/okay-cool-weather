@@ -10,7 +10,7 @@ body {
 }
 
 .weather-app-wrap {
-  padding: 25px 15px 25px 30px;
+  padding: 25px 30px 10px;
   border-radius: 15px;
   background: radial-gradient(
     circle at 10% 20%,
@@ -62,9 +62,9 @@ footer a {
 }
 
 #search-button {
-  margin: 0 10px 0 0;
+  margin: 0 5px 0 0;
   border: none;
-  padding: 6px 15px;
+  padding: 6px 10px;
   border-radius: 20px;
   font-size: 14px;
   color: rgb(138, 112, 135);
@@ -74,10 +74,10 @@ footer a {
 
 #current-button {
   margin: 0 10px 0 0;
-  padding: 6px 15px;
+  padding: 6px 10px;
   border-radius: 20px;
   font-size: 14px;
-  color: rgb(161, 161, 161);
+  color: rgb(138, 112, 135);
   background: rgb(255, 255, 255);
   border: none;
   transition: all 150ms ease-in;
@@ -86,12 +86,12 @@ footer a {
 #search-button:hover,
 #current-button:hover {
   background: rgb(253, 255, 111);
-  color: rgb(143, 143, 143);
+  color: rgb(138, 112, 135);
 }
 
 #search {
   background: white;
-  padding: 5px 8px;
+  padding: 4px 5px;
   margin: 0 8px 10px 0;
   border: 1px solid rgba(183, 186, 236, 0.2);
   border-radius: 20px;
@@ -156,7 +156,7 @@ li small {
 
 .weather-forecast {
   padding: 0;
-  margin: 15px auto 3px -2px;
+  margin: 15px auto 10px;
   text-align: center;
   color: rgb(255, 255, 255);
 }

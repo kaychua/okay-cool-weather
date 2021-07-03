@@ -54,7 +54,7 @@ function displayTemperature(response) {
 function displayWeatherForecast() {
   let weatherForecastElement = document.querySelector("#forecast");
 
-  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
 
   let forecastHtml = `<div class="row">`;
   days.forEach(function (day) {
