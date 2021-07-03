@@ -10,7 +10,7 @@ body {
 }
 
 .weather-app-wrap {
-  padding: 25px;
+  padding: 20px;
   border-radius: 15px;
   background: radial-gradient(
     circle at 10% 20%,
@@ -43,7 +43,7 @@ ul {
 
 img {
   display: inline-block;
-  max-width: 70px;
+  max-width: 80px;
   margin: 0 -10px -5px -14px;
   padding: 0;
 }
@@ -156,7 +156,7 @@ li small {
 
 .weather-forecast {
   padding: 0;
-  margin: 15px auto 0;
+  margin: 10px auto 0;
   text-align: center;
   color: rgb(255, 255, 255);
 }
