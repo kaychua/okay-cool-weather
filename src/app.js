@@ -111,6 +111,21 @@ function search(city) {
   axios.get(apiUrl).then(displayTemperature);
 }
 
+function handleClick() {
+  navigator.geolocation.getCurrentPosition(currentLocation);
+
+  function currentLocation(position) {
+    let apiKey = "616d4f1d4c8141d448674e1f1ec401a1";
+    let endPoint = "https://api.openweathermap.org/";
+    let unit = "metric";
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let apiUrl = `${endPoint}data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&&units=${unit}`;
+
+    axios.get(apiUrl).then(displayTemperature);
+  }
+}
+
 function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#search");
@@ -134,6 +149,7 @@ function displayCelsiusUnit(event) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+
 let celsiusTemperature = null;
 
 let form = document.querySelector(".search-bar");
@@ -144,5 +160,8 @@ fahrenheitLink.addEventListener("click", displayFahrenheitUnit);
 
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", displayCelsiusUnit);
+
+let currentButton = document.querySelector("button");
+currentButton.addEventListener("click", handleClick);
 
 search("Seoul");
