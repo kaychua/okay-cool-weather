@@ -44,7 +44,7 @@ ul {
 img {
   display: inline-block;
   max-width: 70px;
-  margin: 0 -10px -5px -15px;
+  margin: 0 -10px -5px -14px;
   padding: 0;
 }
 
@@ -170,7 +170,7 @@ li small {
 }
 
 .weather-forecast img {
-  width: 40px;
+  width: 50px;
   margin: 0 auto;
 }
 
