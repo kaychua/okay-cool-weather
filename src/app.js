@@ -24,6 +24,14 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -61,27 +69,34 @@ function callForecast(coordinates) {
 }
 
 function displayWeatherForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
+
   let weatherForecastElement = document.querySelector("#forecast");
 
-  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
-
   let forecastHtml = `<div class="row">`;
-  days.forEach(function (day) {
-    forecastHtml =
-      forecastHtml +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHtml =
+        forecastHtml +
+        `
       <div class="col-2 weather-forecast">
         <div class="weather-forecast-date">
-            ${day}
+            ${formatDay(forecastDay.dt)}
         </div>
-        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="weatherForecastConditionIcon" id="weather-forecast-icon"/>
+        <img src="http://openweathermap.org/img/wn/${
+          forecastDay.weather[0].icon
+        }@2x.png" alt="http://openweathermap.org/img/wn/${
+          forecastDay.weather[0].description
+        }@2x.png" id="weather-forecast-icon"/>
         <div class="weather-forecast-temperature">
-        <span id="max-forecast-temp">20°</span> |
-                <span id="min-forecast-temp"> 15°</span>
+        <div id="max-forecast-temp">${Math.round(forecastDay.temp.max)}°</div>
+                <div id="min-forecast-temp"> ${Math.round(
+                  forecastDay.temp.min
+                )}°</div>
               </div>
               </div>
         `;
+    }
   });
 
   forecastHtml = forecastHtml + `</div>`;
